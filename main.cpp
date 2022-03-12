@@ -83,5 +83,10 @@ int main()
     }
     std::cout << "La somme N+1 vaut: " << total << "." << std::endl;
     */
+    // Boucle for:
+    for (int a { 0 }; a < 10; ++a)
+    {
+        std::cout << "De 0 à 9 :" << a << std::endl;
+    } 
     return 0;
 }
