@@ -14,6 +14,7 @@ int main()
     return 0;
     */
     // Exo Laverie:
+    /*
     std::cout << "Bienvenue !" << std::endl;
     std::cout << "Combien de kilo de linge ?" << std::endl;
     int poids { 0 };
@@ -41,5 +42,22 @@ int main()
             std::cout << "Les " << poids << " kg restant dans la  machine de 5kg." << std::endl;
         }
     }
+    */
+    // PGCD
+    int a { 0 };
+    int b { 0 };
+    std::cout << "Le premier nombre:" << std::endl;
+    std::cin >> a;
+    std::cout << "Le deuxieme nombre:" << std::endl;
+    std::cin >> b;
+    int r { a % b };
+    while (r != 0)
+    {
+        b = a;
+        b = r;
+        r = a % b;
+    }
+    std::cout << "Le PGCD est égale à " << b << "." << std::endl;
+    
     return 0;
 }
