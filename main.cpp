@@ -44,6 +44,7 @@ int main()
     }
     */
     // PGCD
+    /*
     int a { 0 };
     int b { 0 };
     std::cout << "Le premier nombre:" << std::endl;
@@ -58,6 +59,29 @@ int main()
         r = a % b;
     }
     std::cout << "Le PGCD est égale à " << b << "." << std::endl;
-    
+    */
+
+    // 1 à n
+    /*
+    int n { 0 };
+    std::cout << "Quel nombre ?" << std::endl;
+    std::cin >> n;
+    */
+    // Version sans boucle:
+    /*
+    int b { ((n * (n + 1)) / 2) };
+    std::cout << "La somme à N +1 vaut: " << b << "." << std::endl;
+    */
+    // Version avec boucle:
+    /*
+    int total { 0 }; // Initialisation compteur à 0
+    int compteur { 1 }; // Incrementation + 1
+    while (compteur <= n) // Tant que le compteur est < ou = à n
+    {
+        total += compteur;  // On ajoute le compteur au total à chaque passage dans la boucle
+        ++compteur; // On incremente le compteur de 1 à chaque passage dans la boucle
+    }
+    std::cout << "La somme N+1 vaut: " << total << "." << std::endl;
+    */
     return 0;
 }
